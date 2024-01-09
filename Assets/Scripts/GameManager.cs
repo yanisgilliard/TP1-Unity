@@ -61,9 +61,9 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("GameOver");
 
-        yield return new WaitForSeconds(2f);
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        SceneManager.LoadScene("Menu");
 
         yield return null;
     }
